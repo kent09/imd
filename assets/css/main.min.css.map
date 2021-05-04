@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../styles/main.scss",
+        "../styles/helpers/_functions.scss",
+        "../styles/helpers/_mixins.scss",
+        "../styles/helpers/_variables.scss",
+        "../styles/components/_navigation.scss",
+        "../styles/components/_buttons.scss",
+        "../styles/layout/_header.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}

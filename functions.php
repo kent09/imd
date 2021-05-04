@@ -143,6 +143,14 @@ function imd_scripts() {
 	wp_enqueue_style( 'imd-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'imd-style', 'rtl', 'replace' );
 
+	
+	wp_enqueue_style( 'getbootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', array(), _S_VERSION );
+	wp_enqueue_style( 'owl-carousel', '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css', array(), _S_VERSION );
+	wp_enqueue_style( 'owl-carousel-default', '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css', array(), _S_VERSION );
+	
+	wp_enqueue_style( 'imd-main', get_template_directory_uri() . '/assets/css/main.min.css', array(), _S_VERSION );
+	
+
 	wp_enqueue_script( 'imd-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
