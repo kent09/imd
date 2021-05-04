@@ -2,13 +2,13 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../styles/main.scss",
-        "../styles/helpers/_functions.scss",
-        "../styles/helpers/_mixins.scss",
-        "../styles/helpers/_variables.scss",
-        "../styles/components/_navigation.scss",
-        "../styles/components/_buttons.scss",
-        "../styles/layout/_header.scss"
+        "../sass/main.scss",
+        "../sass/helpers/_functions.scss",
+        "../sass/helpers/_mixins.scss",
+        "../sass/helpers/_variables.scss",
+        "../sass/components/_navigation.scss",
+        "../sass/components/_buttons.scss",
+        "../sass/layout/_header.scss"
     ],
     "names": [],
     "file": "main.min.css"
