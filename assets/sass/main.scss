@@ -1,3 +1,7 @@
-@import 'helpers/functions', 'helpers/mixins', 'helpers/variables';
-@import 'components/navigation', 'components/buttons';
-@import 'layout/header';
+@import "helpers/variables", "helpers/typography", "helpers/functions",
+  "helpers/mixins";
+
+@import "components/spacer", "components/navigation", "components/buttons",
+  "components/background";
+
+@import "layout/header";
