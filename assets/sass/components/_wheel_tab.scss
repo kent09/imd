@@ -1,0 +1,27 @@
+.wheel-tab {
+  & > .title {
+    padding-bottom: 30px;
+  }
+  .description {
+    max-width: 690px;
+    line-height: 145%;
+    padding-bottom: 90px;
+  }
+}
+
+#wheel-tab {
+  height: 690px;
+  width: 780px;
+  background-image: url("../images/IMD-Wheel-No Tabs.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  @media only screen and (max-width: 992px) {
+    width: 100%;
+  }
+  .nav-tabs {
+    li:first-child a {
+      @include rotated-text(20, 60deg);
+    }
+  }
+}

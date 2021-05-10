@@ -4,7 +4,23 @@
   background-size: contain;
   height: 100%;
   width: 100%;
+  z-index: 1;
 }
 .bg-light-blue {
   background-color: $bg-light-blue;
+}
+.bg-dark-green {
+  background-color: $bg-dark-green;
+}
+.bg-with-line {
+  background-image: url("../images/bg-with-line.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  max-width: 720px;
+  padding-bottom: 100px;
+  img {
+    width: 100%;
+    min-height: 528px;
+    object-fit: cover;
+  }
 }

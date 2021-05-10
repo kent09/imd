@@ -1,0 +1,65 @@
+.parallelogram {
+  background-color: $bg-light-blue;
+  width: 475px;
+  height: 116px;
+  z-index: 2;
+  bottom: -16px;
+  right: -35px;
+}
+.green-box {
+  width: 294px;
+  height: 100px;
+  z-index: 2;
+  background: rgb(244, 247, 249);
+  background: linear-gradient(
+    340deg,
+    rgba(244, 247, 249, 1) 0%,
+    rgba(15, 154, 190, 1) 0%,
+    rgba(173, 221, 221, 1) 0%,
+    rgba(94, 187, 187, 1) 100%
+  );
+  right: unset;
+  left: -35px;
+  bottom: -60px;
+}
+.skew-left {
+  transform: skew(30deg);
+  -webkit-transform: skew(30deg);
+  -moz-transform: skew(30deg);
+  -o-transform: skew(30deg);
+}
+.skew-right {
+  transform: skew(-30deg);
+  -webkit-transform: skew(-30deg);
+  -moz-transform: skew(-30deg);
+  -o-transform: skew(-30deg);
+}
+.skew-left-15 {
+  transform: skew(15deg);
+  -webkit-transform: skew(15deg);
+  -moz-transform: skew(15deg);
+  -o-transform: skew(15deg);
+}
+.skew-right-15 {
+  transform: skew(-15deg);
+  -webkit-transform: skew(-15deg);
+  -moz-transform: skew(-15deg);
+  -o-transform: skew(-15deg);
+}
+.img-skew {
+  position: relative;
+  left: -75px;
+  img {
+    position: relative;
+    left: 75px;
+  }
+}
+
+.img-skew-right {
+  position: relative;
+  right: -35px;
+  img {
+    position: relative;
+    right: 35px;
+  }
+}

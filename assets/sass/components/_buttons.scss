@@ -1,0 +1,34 @@
+body a {
+  outline: none;
+}
+.green-line {
+  @include dash($color-dark-green);
+}
+.light-green-line {
+  @include dash($color-green);
+}
+.more-holder {
+  font-family: $montserrat-font;
+  font-weight: $font-weight-semi-bold;
+  a,
+  a:hover {
+    text-decoration: none;
+    color: $color-black;
+  }
+}
+
+.about-more {
+  a,
+  a:hover {
+    color: #14242d;
+    text-decoration: none;
+    &::after {
+      display: block;
+      content: "";
+      width: 100%;
+      height: 2px;
+      margin-top: 10px;
+      background-color: $color-green;
+    }
+  }
+}

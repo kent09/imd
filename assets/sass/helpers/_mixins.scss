@@ -1,0 +1,34 @@
+@mixin rotated-text(
+  $num-letters: 100,
+  $angle-span: 180deg,
+  $angle-offset: 0deg
+) {
+  $angle-per-char: $angle-span / $num-letters;
+  @for $i from 1 through $num-letters {
+    .char#{$i} {
+      transform: rotate($angle-offset + $angle-per-char * $i);
+    }
+  }
+}
+
+@mixin dash($color) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::after {
+    content: "";
+    display: block;
+    background: $color;
+    height: 2px;
+    width: 50px;
+    margin-left: 15px;
+  }
+}
+
+@mixin transition-bg {
+  -webkit-transition: background 150ms linear;
+  -moz-transition: background 150ms linear;
+  -ms-transition: background 150ms linear;
+  -o-transition: background 150ms linear;
+  transition: background 150ms linear;
+}
