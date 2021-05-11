@@ -12,9 +12,8 @@ $label = get_field('section_label');
 					$title = get_sub_field('title');
 					$description = get_sub_field('description');
 					?>
-					<div class="overlay position-absolute">
-						<div class="img h-100" style="background-image: url(<?php echo $img; ?>);"></div>
-					</div>
+					<div class="overlay position-absolute bg-position-size"></div>
+					<div class="img h-100 position-absolute" style="background-image: url(<?php echo $img; ?>);"></div>
 					<div class="container mt-auto">
 						<div class="slider__content position-relative z-index-5">
 							<?php if ($title) : ?>

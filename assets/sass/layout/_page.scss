@@ -1,0 +1,33 @@
+.hero-banner {
+  height: 650px;
+  padding-bottom: 100px;
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  &::before {
+    background-image: url("../images/white-poly.svg");
+    height: 200px;
+    width: 358px;
+    bottom: 70px;
+    right: 0;
+  }
+  &::after {
+    background-image: url("../images/green-poly.svg");
+    height: 103px;
+    width: 206px;
+    bottom: -60px;
+    left: 0;
+  }
+  .hero__content {
+    max-width: 570px;
+    z-index: 1;
+  }
+  .description {
+    max-width: 400px;
+  }
+}

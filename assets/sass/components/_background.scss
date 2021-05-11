@@ -2,9 +2,23 @@
   background-image: url(../images/overlay.png);
   background-position: left center;
   background-size: contain;
+  background-repeat: no-repeat;
   height: 100%;
   width: 100%;
   z-index: 1;
+}
+.img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.bg-position-size {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 .bg-light-blue {
   background-color: $bg-light-blue;

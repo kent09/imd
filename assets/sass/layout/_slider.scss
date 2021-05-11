@@ -1,7 +1,4 @@
 .slider {
-  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
   &::before {
     content: " ";
     display: block;
@@ -16,6 +13,10 @@
   .img {
     background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    bottom: 0;
+    width: 100%;
   }
   .slider__content {
     max-width: 570px;
@@ -23,6 +24,7 @@
   }
   .title {
     letter-spacing: -2px;
+    font-weight: normal;
     @media only screen and (max-width: 576px) {
       font-size: 42px;
       line-height: normal;
@@ -66,7 +68,7 @@
     div::after {
       content: "";
       display: block;
-      background: $color-dark-green;
+      background: $color-green;
       height: 2px;
       width: 50px;
       margin-left: 15px;

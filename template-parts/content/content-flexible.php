@@ -15,6 +15,10 @@ if (have_rows('page_content')) :
             get_template_part('template-parts/flexible/brand-with-right', 'image');
         elseif (get_row_layout() == 'latest_news') :
             get_template_part('template-parts/flexible/content-latest', 'news');
+        elseif (get_row_layout() == 'hero_banner') :
+            get_template_part('template-parts/flexible/hero', 'banner');
+        elseif (get_row_layout() == 'tablist') :
+            get_template_part('template-parts/flexible/content-tab', 'list');
         endif;
     endwhile;
 

@@ -31,7 +31,7 @@
 
 			<div class="logo">
 				<?php $logo = get_field('header_logo', 'option'); ?>
-				<?php echo wp_get_attachment_image($logo, 'full'); ?>
+				<a href="<?php echo get_home_url(); ?>"><?php echo wp_get_attachment_image($logo, 'full'); ?></a>
 			</div>
 
 			<nav id="site-navigation" class="main-navigation">

@@ -164,14 +164,12 @@ function imd_scripts()
 	wp_enqueue_script('imd-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
 	wp_enqueue_script('getbootstrap-js', '//cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js', array(), _S_VERSION, true);
 	wp_enqueue_script('owl-carousel-js', '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', array(), _S_VERSION, true);
-	wp_enqueue_script('lettering-js', '//cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js', array(), _S_VERSION, true);
 	wp_enqueue_script('waypoints-js', '//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js', array(), _S_VERSION, true);
 	wp_enqueue_script('counter-up-js', get_template_directory_uri() . '/assets/js/jquery.counterup.min.js', array(), _S_VERSION, true);
-	wp_enqueue_script('d3-js', '//ajax.googleapis.com/ajax/libs/d3js/6.7.0/d3.min.js', array(), _S_VERSION, true);
 
 	wp_enqueue_script('imd-custom', get_template_directory_uri() . '/assets/js/custom.js', array(), _S_VERSION, true);
 
-	wp_enqueue_script('wheel-tab-js', get_template_directory_uri() . '/assets/js/wheelTab.js', array(), _S_VERSION, true);
+	// wp_enqueue_script('wheel-tab-js', get_template_directory_uri() . '/assets/js/wheelTab.js', array(), _S_VERSION, true);
 
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {

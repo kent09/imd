@@ -29,15 +29,15 @@ $size = 'full';
             ?>
                 <div class="col-lg-6">
                     <div class="post-wrapper h-full d-flex bg-white">
-                        <div class="feature-image position-relative">
-                            <?php $feature = get_field('feature', $recent['ID']); ?>
-                            <?php if ($feature) : ?>
-                                <div class="feature font-size-13 text-white position-absolute d-flex align-items-center font-family-mont">FEATURED</div>
-                            <?php endif; ?>
-                            <?php if ($image) : ?>
+                        <?php if ($image) : ?>
+                            <div class="feature-image position-relative">
+                                <?php $feature = get_field('feature', $recent['ID']); ?>
+                                <?php if ($feature) : ?>
+                                    <div class="feature font-size-13 text-white position-absolute d-flex align-items-center font-family-mont">FEATURED</div>
+                                <?php endif; ?>
                                 <?php echo $image; ?>
-                            <?php endif; ?>
-                        </div>
+                            </div>
+                        <?php endif; ?>
                         <div class="content d-flex flex-column">
                             <div class="post-title"><?php echo $recent['post_title']; ?></div>
                             <div class="excerpt font-family-mont"><?php echo wp_trim_words(get_the_content(null, false, $recent['ID']), 20); ?></div>

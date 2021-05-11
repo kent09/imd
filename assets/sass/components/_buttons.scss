@@ -2,7 +2,7 @@ body a {
   outline: none;
 }
 .green-line {
-  @include dash($color-dark-green);
+  @include dash($color-green);
 }
 .light-green-line {
   @include dash($color-green);
