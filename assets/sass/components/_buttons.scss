@@ -32,3 +32,44 @@ body a {
     }
   }
 }
+
+.contact-with-btn {
+  font-family: $montserrat-font;
+  font-weight: 600;
+  color: $color-dark-green;
+  font-size: 14px;
+  padding: 15px 20px 15px 15px;
+  text-decoration: none;
+  background-color: $color-white;
+  &::before {
+    display: block;
+    content: "";
+    width: 28px;
+    height: 28px;
+    background-image: url('../images/linkedin.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 12px;
+    background-color: $color-green;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+}
+.contact-with-btn:hover {
+  background-color: #fff;
+  color: $color-dark-green;
+}
+
+.contact-us-btn {
+  background-color: #E9F1F5;
+  font-family: $montserrat-font;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  color: $color-dark-green;
+  padding: 20px 40px;
+  display: inline-block;
+  &:hover {
+    color: $color-dark-green
+  }
+}

@@ -11,18 +11,18 @@ $size = 'full';
 ?>
 <section class="content-tab-list">
     <?php if ($top) : ?>
-        <div class="title font-size-13 text-green font-family-mont fw-bold text-uppercase pb-30">
+        <div class="title text-center font-size-13 text-green font-family-mont fw-bold text-uppercase pb-30">
             <?php echo $top; ?>
         </div>
     <?php endif; ?>
     <?php if ($top_desc) : ?>
-        <div class="description font-size-30 ml-auto mr-auto">
+        <div class="description text-center font-size-30 ml-auto mr-auto text-black">
             <?php echo $top_desc; ?>
         </div>
     <?php endif; ?>
     <div class="container">
         <?php if ($tablist_title) : ?>
-            <div class="font-size-13 text-green font-family-mont fw-bold text-uppercase pb-30">
+            <div class="font-size-13 text-green font-family-mont fw-bold text-uppercase pb-50">
                 <?php echo $tablist_title; ?>
             </div>
         <?php endif; ?>
@@ -37,12 +37,12 @@ $size = 'full';
                             <?php $contact = get_sub_field('contact'); ?>
 
                             <li>
-                                <div class="tab_title">
+                                <div class="tab_title text-black">
                                     <?php echo $title; ?>
                                 </div>
                                 <div class="tab_description">
                                     <?php if ($content) : ?>
-                                        <div class="content_wrapper">
+                                        <div class="content_wrapper font-family-mont">
                                             <?php echo $content; ?>
                                         </div>
                                     <?php endif; ?>
@@ -51,13 +51,13 @@ $size = 'full';
                                         <?php $name = $contact['name']; ?>
                                         <?php $prof = $contact['profession']; ?>
                                         <?php $contact_btn = $contact['contact']; ?>
-                                        <div class="contact-with">
+                                        <div class="contact-with d-flex align-items-center position-relative">
                                             <?php if ($avatar) : ?>
                                                 <div class="avatar">
                                                     <?php echo wp_get_attachment_image($avatar, $size); ?>
                                                 </div>
                                             <?php endif; ?>
-                                            <div class="name">
+                                            <div class="name text-black">
                                                 <?php if ($name) : ?>
                                                     <div><?php echo $name; ?></div>
                                                 <?php endif; ?>
@@ -66,7 +66,7 @@ $size = 'full';
                                                 <?php endif; ?>
                                             </div>
                                             <?php if ($contact_btn) : ?>
-                                                <a href="<?php echo $contact_btn['url']; ?>" target="<?php echo $contact_btn['target']; ?>">
+                                                <a href="<?php echo $contact_btn['url']; ?>" class="contact-with-btn d-flex align-items-center" target="<?php echo $contact_btn['target']; ?>">
                                                     <?php echo $contact_btn['title']; ?>
                                                 </a>
                                             <?php endif; ?>
@@ -89,7 +89,7 @@ $size = 'full';
                         <p><?php echo $right_side_content; ?></p>
                     <?php endif; ?>
                     <?php if ($right_contact) : ?>
-                        <a href="<?php echo $right_contact['url']; ?>" target="<?php echo $right_contact['target']; ?>">
+                        <a href="<?php echo $right_contact['url']; ?>" class="contact-us-btn" target="<?php echo $right_contact['target']; ?>">
                             <?php echo $right_contact['title']; ?>
                         </a>
                     <?php endif; ?>

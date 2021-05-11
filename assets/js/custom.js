@@ -18,5 +18,11 @@ $(document).ready(function() {
     $('.nav-wrapper button').on('click', function() {
       $('#site-navigation').removeClass('toggled');
     });
+
+    $('.content-tab-list .tab_title').on('click', function() {
+        let $this = $(this)
+        $this.parent().toggleClass('active');
+        $this.parent().find('.tab_description').slideToggle('fast');
+    })
     
 });
