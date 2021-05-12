@@ -73,3 +73,14 @@ body a {
     color: $color-dark-green
   }
 }
+.round-arrow-right {
+  background-image: url('../images/green-arrow-right.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 44px;
+  height: 44px;
+  background-color: $color-white;
+  display: block;
+  border-radius: 50%;
+}
+

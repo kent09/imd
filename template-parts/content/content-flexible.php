@@ -27,7 +27,15 @@ if (have_rows('page_content')) :
             get_template_part('template-parts/flexible/content-our', 'success');
         elseif (get_row_layout() == 'meet_the_team') :
             get_template_part('template-parts/flexible/content-meet-the', 'team');
-
+        elseif (get_row_layout() == 'content_right_image') :
+            get_template_part('template-parts/flexible/content-right', 'image');
+        elseif (get_row_layout() == 'content_left_image_v2') :
+            get_template_part('template-parts/flexible/content-left-image', 'v2');
+        elseif (get_row_layout() == 'hero_banner_with_overlay') :
+            get_template_part('template-parts/flexible/hero-banner-with', 'overlay');
+        elseif (get_row_layout() == 'content_success_list') :
+            get_template_part('template-parts/flexible/content-success', 'list');
+            
         endif;
     endwhile;
 
