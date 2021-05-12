@@ -23,7 +23,11 @@ if (have_rows('page_content')) :
             get_template_part('template-parts/flexible/content-our', 'partner');
         elseif (get_row_layout() == 'enquire') :
             get_template_part('template-parts/flexible/content', 'enquire');
-            
+        elseif (get_row_layout() == 'our_success') :
+            get_template_part('template-parts/flexible/content-our', 'success');
+        elseif (get_row_layout() == 'meet_the_team') :
+            get_template_part('template-parts/flexible/content-meet-the', 'team');
+
         endif;
     endwhile;
 

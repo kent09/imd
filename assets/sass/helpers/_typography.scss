@@ -20,7 +20,9 @@ body {
 .font-size-30 {
   font-size: 30px;
 }
-
+.font-size-24 {
+  font-size: 24px;
+}
 .font-size-13 {
   font-size: 13px;
 }
@@ -36,4 +38,11 @@ body {
 }
 .text-black {
   color: black;
+}
+.text-gray {
+  color: #2d3f48;
+  opacity: 0.4;
+}
+.decoration-none {
+  text-decoration: none;
 }
