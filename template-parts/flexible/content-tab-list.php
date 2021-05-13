@@ -6,10 +6,10 @@ $tablist_title = get_sub_field('tablist_title');
 $right_image = get_sub_field('right_image');
 $right_side_content = get_sub_field('right_content');
 $right_contact = get_sub_field('contact_us');
-
+$with_green_box = get_sub_field('with_green_box');
 $size = 'full';
 ?>
-<section class="content-tab-list">
+<section class="content-tab-list position-relative <?php echo $with_green_box ? 'show-green-box' : ''; ?>">
     <?php if ($top) : ?>
         <div class="title text-center font-size-13 text-green font-family-mont fw-bold text-uppercase pb-30">
             <?php echo $top; ?>
