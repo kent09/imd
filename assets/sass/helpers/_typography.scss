@@ -12,6 +12,10 @@ body {
 .font-size-62 {
   font-size: 62px;
   line-height: 68px;
+  @media only screen and (max-width: 576px) {
+    font-size: 42px;
+    line-height: normal;
+  }
 }
 .font-size-20 {
   font-size: 20px;
@@ -19,6 +23,9 @@ body {
 
 .font-size-30 {
   font-size: 30px;
+  @media only screen and (max-width: 576px) {
+    font-size: 26px;
+  }
 }
 .font-size-24 {
   font-size: 24px;

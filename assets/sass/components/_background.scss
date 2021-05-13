@@ -6,6 +6,9 @@
   height: 100%;
   width: 100%;
   z-index: 1;
+  @media only screen and (max-width: 1199px ) {
+    background-size: cover;
+  }
 }
 .img {
   background-position: center center;
