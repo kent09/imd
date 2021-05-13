@@ -12,7 +12,10 @@
                     $logo = get_sub_field('logo');
                     $green = get_sub_field('green_card');
                 ?>
-                <div class="content-wrapper position-relative">
+                <div class="content-wrapper position-relative <?php $green ? 'background-image:url('.$image.')' : "" ?>">
+                    <?php if($green): ?>
+                    <div class="green-overlay position-absolute"></div>
+                    <?php endif; ?>
                     <?php if($logo): ?>
                         <div class="logo position-absolute d-flex justify-content-center align-items-center">
                             <?php echo wp_get_attachment_image($logo, 'full'); ?>
@@ -23,6 +26,7 @@
                             <?php echo wp_get_attachment_image($image, 'full'); ?>
                         </div>
                     <?php endif; ?>
+
                     <?php if($title): ?>
                         <div class="title"><?php echo $title; ?></div>
                     <?php endif; ?>
