@@ -19,6 +19,8 @@ if (have_rows('page_content')) :
             get_template_part('template-parts/flexible/hero', 'banner');
         elseif (get_row_layout() == 'tablist') :
             get_template_part('template-parts/flexible/content-tab', 'list');
+        elseif (get_row_layout() == 'tablist_without_top_content') :
+            get_template_part('template-parts/flexible/tablist-without-top', 'content');
         elseif (get_row_layout() == 'our_partners') :
             get_template_part('template-parts/flexible/content-our', 'partner');
         elseif (get_row_layout() == 'enquire') :

@@ -11,8 +11,9 @@
                     $link = get_sub_field('more_info');
                     $logo = get_sub_field('logo');
                     $green = get_sub_field('green_card');
+                    $img_url = wp_get_attachment_image_src($image, 'full');
                 ?>
-                <div class="content-wrapper position-relative <?php $green ? 'background-image:url('.$image.')' : "" ?>">
+                <div class="content-wrapper position-relative <?php echo $green ? "text-white" : ""; ?> " <?php echo $green ? 'style="background-image:url('.$img_url[0].');"' : "" ?>>
                     <?php if($green): ?>
                     <div class="green-overlay position-absolute"></div>
                     <?php endif; ?>
@@ -31,7 +32,7 @@
                         <div class="title"><?php echo $title; ?></div>
                     <?php endif; ?>
                     <?php if($desc): ?>
-                        <div class="description"><?php echo $desc; ?></div>
+                        <div class="description font-family-mont"><?php echo $desc; ?></div>
                     <?php endif; ?>
                     <?php if ($link) : ?>
                         <div class="more-holder d-flex">

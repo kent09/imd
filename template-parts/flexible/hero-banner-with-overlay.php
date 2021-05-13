@@ -11,10 +11,17 @@
 
     $show = get_sub_field('show');
 
+    global $post;
+    $post_slug = $post->post_name;
+    $bg = "";
+    if($post_slug == "contact-us") {
+        $bg = 'contact-overlay';
+    }
+
 ?>
 
 <section class="hero-banner-with-overlay d-flex positive-relative">
-    <div class="overlay position-absolute"></div>
+    <div class="overlay position-absolute <?php echo $bg; ?>"></div>
     <div class="img bg-position-size position-absolute" style="background-image:url('<?php echo $image; ?>')"></div>
     <div class="container mt-auto position-relative">
         <div class="row">

@@ -10,6 +10,11 @@
  * @package imd
  */
 
+get_header();
+global $post;
+$post_slug = $post->post_name;
+
+
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -57,11 +62,19 @@
 					<?php
 					$in = get_field('linkedin', 'option');
 					$contact = get_field('contact_us', 'option');
+					$bg = "";
+					if($post_slug == "contact-us") {
+						$bg = 'bg-white';
+					}
 					?>
 					<?php if ($in || $contact) : ?>
 						<ul class="ml-auto pl-0 top-info">
 							<?php if ($in) : ?>
-								<li><a href="<?php echo $in; ?>" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/linkedin.svg" /></a></li>
+								<li>
+									<a href="<?php echo $in; ?>" class="<?php echo $bg; ?>" target="_blank">
+										<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/<?php echo $post_slug == "contact-us" ? "linkedin-green.svg" : "linkedin.svg"; ?>" />
+									</a>
+								</li>
 							<?php endif; ?>
 							<?php if ($contact) : ?>
 								<li><a href="<?php echo $contact['url']; ?>" target="<?php echo $contact['target']; ?>"><?php echo $contact['title']; ?></a></li>
