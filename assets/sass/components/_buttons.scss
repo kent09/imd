@@ -46,7 +46,7 @@ body a {
     content: "";
     width: 28px;
     height: 28px;
-    background-image: url('../images/linkedin.svg');
+    background-image: url("../images/linkedin.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 12px;
@@ -61,7 +61,7 @@ body a {
 }
 
 .contact-us-btn {
-  background-color: #E9F1F5;
+  background-color: #e9f1f5;
   font-family: $montserrat-font;
   font-weight: 600;
   font-size: 15px;
@@ -69,12 +69,13 @@ body a {
   color: $color-dark-green;
   padding: 20px 40px;
   display: inline-block;
-  &:hover {
-    color: $color-dark-green
+  &:hover,
+  &:visited {
+    color: $color-dark-green;
   }
 }
 .round-arrow-right {
-  background-image: url('../images/green-arrow-right.svg');
+  background-image: url("../images/green-arrow-right.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 44px;
@@ -83,4 +84,3 @@ body a {
   display: block;
   border-radius: 50%;
 }
-

@@ -35,7 +35,14 @@ if (have_rows('page_content')) :
             get_template_part('template-parts/flexible/hero-banner-with', 'overlay');
         elseif (get_row_layout() == 'content_success_list') :
             get_template_part('template-parts/flexible/content-success', 'list');
-            
+        elseif (get_row_layout() == 'content_legacy') :
+            get_template_part('template-parts/flexible/content', 'legacy');
+        elseif (get_row_layout() == 'content_testimonial') :
+            get_template_part('template-parts/flexible/content', 'testimonial');
+        elseif (get_row_layout() == 'content_successful_outcome') :
+            get_template_part('template-parts/flexible/content-successful', 'outcome');
+        elseif (get_row_layout() == 'content_contact_us') :
+            get_template_part('template-parts/flexible/content-contact', 'us');
         endif;
     endwhile;
 
