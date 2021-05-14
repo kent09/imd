@@ -49,9 +49,15 @@
 .img-skew {
   position: relative;
   left: -75px;
+  @media only screen and (max-width: 768px) {
+    left: -65px;
+  }
   img {
     position: relative;
     left: 75px;
+    @media only screen and (max-width: 768px) {
+      left: 65px;
+    }
   }
 }
 

@@ -94,4 +94,17 @@
       flex-wrap: wrap;
     }
   }
+  #colophon {
+    .footer-logo {
+      padding-bottom: 20px;
+    }
+    .brand-list {
+      margin: 0;
+      justify-content: center;
+      flex-wrap: wrap;
+      li {
+        padding-bottom: 6px;
+      }
+    }
+  }
 }

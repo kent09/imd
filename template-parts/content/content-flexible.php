@@ -7,6 +7,8 @@ if (have_rows('page_content')) :
             get_template_part('template-parts/flexible/content-side', 'gallery');
         elseif (get_row_layout() == 'wheel_tab') :
             get_template_part('template-parts/flexible/content-wheel', 'tab');
+        elseif (get_row_layout() == 'wheel_tab_without_top_content') :
+            get_template_part('template-parts/flexible/wheel-without-top', 'content');
         elseif (get_row_layout() == 'testimonial_tab') :
             get_template_part('template-parts/flexible/content-testimonial', 'tab');
         elseif (get_row_layout() == 'left_content_image') :

@@ -41,21 +41,10 @@ body a {
   padding: 15px 20px 15px 15px;
   text-decoration: none;
   background-color: $color-white;
-  &::before {
-    display: block;
-    content: "";
-    width: 28px;
-    height: 28px;
-    background-image: url("../images/linkedin.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 12px;
-    background-color: $color-green;
-    border-radius: 50%;
-    margin-right: 15px;
-  }
 }
-.contact-with-btn:hover {
+.contact-with-btn:hover,
+.contact-with-btn:active,
+.contact-with-btn:focus {
   background-color: #fff;
   color: $color-dark-green;
 }

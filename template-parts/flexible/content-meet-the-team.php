@@ -19,7 +19,7 @@ $desc = get_sub_field('description');
                     <?php $name = get_sub_field('name'); ?>
                     <?php $prof = get_sub_field('profession'); ?>
                     <?php $email = get_sub_field('email'); ?>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <?php if ($image) : ?>
                             <div class="img-wrapper position-relative pb-20">
                                 <?php echo wp_get_attachment_image($image, 'full'); ?>

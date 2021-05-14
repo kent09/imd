@@ -41,6 +41,10 @@
     right: 0;
     width: 325px;
     height: 114px;
+    z-index: 1;
+    @media only screen and (max-width: 576px) {
+      display: none;
+    }
   }
 }
 .content-tab-list {
@@ -91,6 +95,9 @@
     background-position: left center;
     background-repeat: no-repeat;
     @include transition-all;
+    @media only screen and (max-width: 576px) {
+      font-size: 24px;
+    }
     &::after {
       content: "";
       width: 44px;
@@ -102,6 +109,7 @@
       background-color: $color-light-green;
       background-repeat: no-repeat;
       background-position: center;
+      flex: 0 0 44px;
       @include transition-all;
     }
   }
@@ -201,6 +209,9 @@
     padding-bottom: 100px;
     max-width: 660px;
     margin: 0 auto;
+    @media only screen and (max-width: 576px) {
+      padding-bottom: 60px;
+    }
   }
   .brand-gallery-wrapper {
     position: relative;
@@ -228,6 +239,9 @@
 .content-enquire {
   padding-bottom: 125px;
   padding-top: 20px;
+  @media only screen and (max-width: 768px) {
+    padding-bottom: 60px;
+  }
   & > div {
     padding: 70px 20px 55px 75px;
     background-image: url("../images/large-gray-message-icon.svg");
@@ -303,6 +317,10 @@
   );
   .col-md-6:first-child {
     padding-right: 0;
+    @media only screen and (max-width: 768px) {
+      padding-right: 15px;
+      padding-bottom: 30px;
+    }
     .content-wrapper {
       box-shadow: -2px 2px 8px -7px rgba(0, 0, 0, 0.5);
       -webkit-box-shadow: -2px 2px 8px -7px rgba(0, 0, 0, 0.5);
@@ -311,6 +329,9 @@
   }
   .col-md-6:last-child {
     padding-left: 0;
+    @media only screen and (max-width: 768px) {
+      padding-left: 15px;
+    }
     .content-wrapper {
       box-shadow: 2px 2px 8px -7px rgba(0, 0, 0, 0.5);
       -webkit-box-shadow: 2px 2px 8px -7px rgba(0, 0, 0, 0.5);
@@ -321,8 +342,15 @@
     padding-bottom: 50px;
     background-color: $color-white;
     margin-bottom: 5px;
+    @media only screen and (max-width: 768px) {
+      padding-left: 15px;
+      padding-right: 15px;
+      .description {
+        padding-bottom: 20px;
+      }
+    }
   }
-  
+
   .img-wrapper {
     padding-bottom: 50px;
   }
@@ -336,14 +364,25 @@
   }
   img {
     max-height: 282px;
+    height: 282px;
     width: 100%;
     object-fit: cover;
   }
 }
 
 .content-meet-the-team {
+  @media only screen and (max-width: 768px) {
+    padding-bottom: 50px;
+    padding-top: 60px;
+    .col-md-3 {
+      padding-bottom: 20px;
+    }
+  }
   .description {
     max-width: 835px;
+    @media only screen and (max-width: 768px) {
+      padding-bottom: 60px;
+    }
   }
   &::after,
   &::before {
@@ -391,14 +430,25 @@
   }
   .prof {
     padding-bottom: 25px;
+    @media only screen and (max-width: 768px) {
+      padding-bottom: 10px;
+    }
   }
   .email a:hover {
     color: $color-green;
   }
 }
 .content-right-image {
+  @media only screen and (max-width: 768px) {
+    padding-bottom: 25px;
+    padding-top: 70px;
+  }
   .content-wrapper {
     max-width: 565px;
+    @media only screen and (max-width: 768px) {
+      margin-left: 0;
+      padding-bottom: 50px;
+    }
   }
   .description {
     padding-bottom: 70px;
@@ -422,11 +472,18 @@
 }
 
 .content-left-image-v2 {
+  @media only screen and (max-width: 768px) {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
   .image-wrapper {
     max-width: 726px;
     background-image: url("../images/left-img-bg.svg");
     background-repeat: no-repeat;
     background-position: right bottom 25px;
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 50px;
+    }
     img {
       max-height: 528px;
       object-fit: cover;
@@ -439,18 +496,22 @@
     max-width: 565px;
   }
 }
-.hero-banner-with-overlay,
-.hero-banner-with-overlay .overlay,
-.hero-banner-with-overlay .img {
-  height: 740px;
-}
+// .hero-banner-with-overlay,
+// .hero-banner-with-overlay .overlay,
+// .hero-banner-with-overlay .img {
+//   height: 740px;
+// }
 .hero-banner-with-overlay {
   padding-bottom: 160px;
+  height: 740px;
+  @media only screen and (max-width: 576px) {
+    padding-bottom: 100px;
+  }
   &::after {
     background-image: url(../images/green-poly.svg);
     height: 103px;
     width: 206px;
-    bottom: -210px;
+    bottom: -50px;
     left: 0;
     content: "";
     display: block;
@@ -555,17 +616,23 @@
 }
 .hero-banner-with-overlay {
   .overlay.contact-overlay {
-    background-image: url('../images/contact-us-overlay.svg');
+    background-image: url("../images/contact-us-overlay.svg");
   }
 }
 .content-success-list {
   padding: 100px 0 30px;
-  .col-md-4 {
+  .col-lg-4 {
     padding-bottom: 70px;
+    @media only screen and (max-width: 768px) {
+      padding-bottom: 30px;
+    }
   }
   .content-wrapper {
     padding-bottom: 25px;
     height: 100%;
+    @media only screen and (max-width: 768px) {
+      min-height: 460px;
+    }
   }
   .content-wrapper.text-white {
     display: flex;
@@ -588,7 +655,7 @@
     }
   }
   .green-overlay {
-    background-color: rgba($color: #0D2C2C, $alpha: 0.98);
+    background-color: rgba($color: #0d2c2c, $alpha: 0.98);
     background-repeat: no-repeat;
     background-position: center center;
     height: 100%;
@@ -624,6 +691,9 @@
   }
   .more-holder {
     padding: 40px 20px 0;
+    @media only screen and (max-width: 576px) {
+      padding: 30px 20px 0;
+    }
   }
 }
 
@@ -744,11 +814,11 @@
 }
 .capabilities {
   .bg-with-line {
-    background-image: url('../images/bg-without-line.svg');
+    background-image: url("../images/bg-without-line.svg");
     background-position: bottom 72px right;
     @media only screen and (max-width: 576px) {
       padding-bottom: 70px;
-      background-position: bottom 26px right;
+      background-position: bottom 42px right;
     }
   }
 }
